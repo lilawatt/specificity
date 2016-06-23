@@ -1,13 +1,9 @@
-<%= form_for([comment.article, comment]) do |f| %>
 <p>
-  <%= f.label :commenter %><br>
-  <%= f.text_field :commenter %>
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
 </p>
+
 <p>
-  <%= f.label :body %><br>
-  <%= f.text_area :body %>
+  <strong>Comment:</strong>
+  <%= comment.body %>
 </p>
-<p>
-  <%= f.submit %>
-</p>
-<% end %>
